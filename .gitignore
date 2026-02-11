@@ -1,0 +1,27 @@
+node_modules/
+
+# Sensitive account/session data
+antigravity-accounts.json
+antigravity-accounts.json.*.tmp
+antigravity-accounts.json.backup
+antigravity-signature-cache.json
+antigravity-logs/
+
+# Local backups and temp files
+*.tmp
+*.bak
+*.bak.*
+
+# Machine-specific local links
+plugin/superpowers.js
+
+# Nested git metadata from embedded repos
+superpowers/.git/
+skills/planning-with-files/.git/
+
+# Embedded repos or large external bundles
+skills/planning-with-files/
+superpowers/
+
+# OS noise
+.DS_Store
