@@ -7,6 +7,15 @@ description: Commit, push, and create/update PR in one flow.
 
 Use this skill when the user says "git ship" or asks to publish current branch changes quickly.
 
+## Default Operating Mode
+
+- Auto-ship by default after implementation is complete.
+- Do **not** ask a separate "git ship?" confirmation when all of these are true:
+  1) the user already asked for implementation/fixes,
+  2) local verification passed,
+  3) branch is not `main`/`master`.
+- Only ask before shipping when there is risk/ambiguity (destructive action, secrets, unclear scope, or explicit user preference to review first).
+
 ## Goal
 
 Run a safe one-pass release flow:

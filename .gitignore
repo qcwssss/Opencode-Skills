@@ -25,3 +25,4 @@ superpowers/
 
 # OS noise
 .DS_Store
+.gitignore
