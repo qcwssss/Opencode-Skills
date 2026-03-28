@@ -1,9 +1,9 @@
 {
-  "preset": "kimi",
+  "preset": "copilot",
   "presets": {
-    "kimi": {
+    "copilot": {
       "orchestrator": {
-        "model": "openai/gpt-5.3-codex",
+        "model": "github-copilot/claude-sonnet-4.6",
         "skills": [
           "*"
         ],
@@ -12,31 +12,31 @@
         ]
       },
       "oracle": {
-        "model": "openai/gpt-5.3-codex",
+        "model": "github-copilot/gpt-codex-5.3",
         "variant": "high",
         "skills": [],
         "mcps": []
       },
       "librarian": {
-        "model": "google/antigravity-gemini-3-flash",
+        "model": "github-copilot/claude-sonnet-4.6",
         "variant": "low",
         "skills": [],
         "mcps": ["websearch", "context7", "grep_app"]
       },
       "explorer": {
-        "model": "google/gemini-3-flash",
+        "model": "github-copilot/claude-sonnet-4.6",
         "variant": "low",
         "skills": [],
         "mcps": []
       },
       "designer": {
-        "model": "google/antigravity-gemini-3-pro",
+        "model": "github-copilot/gemini-3.1-pro-preview",
         "variant": "high",
         "skills": ["agent-browser"],
         "mcps": []
       },
  "fixer": {
-        "model": "openai/gpt-5.3-codex",
+        "model": "github-copilot/claude-sonnet-4.6",
         "variant": "medium",
         "skills": [],
         "mcps": []
